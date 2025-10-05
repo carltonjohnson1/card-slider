@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Slider</title>
 
+    <!-- Link to Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- link to Swiper JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container swiper">
       <div class="wrapper">
-        <div class="card-list">
+        <div class="card-list swiper-wrapper">
           <!-- Card 1 -->
-          <div class="card">
+          <div class="card swiper-slide">
             <div class="card-image">
               <img src="images/design.jpg" alt="Design" />
               <p class="card-tag">Design</p>
@@ -40,7 +53,7 @@
 
           <!-- Card 2 -->
 
-          <div class="card">
+          <div class="card swiper-slide">
             <div class="card-image">
               <img src="images/development.jpg" alt="development" />
               <p class="card-tag">Development</p>
@@ -67,24 +80,22 @@
 
           <!-- Card 3 -->
 
-          <div class="card">
+          <div class="card swiper-slide">
             <div class="card-image">
-              <img src="images/development.jpg" alt="development" />
-              <p class="card-tag">Development</p>
+              <img src="images/ai.jpg" alt="AI User Experience Design" />
+              <p class="card-tag">AI</p>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Best Frontend Frameworks</h3>
+              <h3 class="card-title">AI User Exeprience Design</h3>
               <p class="card-text">
-                A comprehensive comparison of the most popoular frontend
-                frameworks and libraries that developers are using to build
-                modern web applications.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <div class="card-footer">
                 <div class="card-profile">
-                  <img src="images/user-2.jpg" alt="Jessica Chen" />
+                  <img src="images/user-3.jpg" alt="Marcus Johnson" />
                   <div class="card-profile-info">
-                    <span class="card-profile-name">Jessica Chen</span>
-                    <span class="card-profile-role">Developer</span>
+                    <span class="card-profile-name">Marcus Johnson</span>
+                    <span class="card-profile-role">AI Researcher</span>
                   </div>
                 </div>
                 <a href="#" class="card-button">Read More</a>
@@ -94,24 +105,24 @@
 
           <!-- Card 4 -->
 
-          <div class="card">
+          <div class="card swiper-slide">
             <div class="card-image">
-              <img src="images/development.jpg" alt="development" />
-              <p class="card-tag">Development</p>
+              <img src="images/productivity.jpg" alt="Productivity" />
+              <p class="card-tag">Productivity</p>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Best Frontend Frameworks</h3>
+              <h3 class="card-title">Workspace Design for Focus</h3>
               <p class="card-text">
-                A comprehensive comparison of the most popoular frontend
-                frameworks and libraries that developers are using to build
-                modern web applications.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus impedit natus voluptates, cupiditate obcaecati
+                explicabo ab quo dolore non
               </p>
               <div class="card-footer">
                 <div class="card-profile">
-                  <img src="images/user-2.jpg" alt="Jessica Chen" />
+                  <img src="images/user-4.jpg" alt="Sarah Miller" />
                   <div class="card-profile-info">
-                    <span class="card-profile-name">Jessica Chen</span>
-                    <span class="card-profile-role">Developer</span>
+                    <span class="card-profile-name">Sarah Miller</span>
+                    <span class="card-profile-role">Interior Designer</span>
                   </div>
                 </div>
                 <a href="#" class="card-button">Read More</a>
@@ -121,24 +132,23 @@
 
           <!-- Card 5 -->
 
-          <div class="card">
+          <div class="card swiper-slide">
             <div class="card-image">
-              <img src="images/development.jpg" alt="development" />
-              <p class="card-tag">Development</p>
+              <img src="images/animation.jpg" alt="animation" />
+              <p class="card-tag">animation</p>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Best Frontend Frameworks</h3>
+              <h3 class="card-title">Micro Animation Designs</h3>
               <p class="card-text">
-                A comprehensive comparison of the most popoular frontend
-                frameworks and libraries that developers are using to build
-                modern web applications.
+                Lorem ipsi, officia odit. Facilis atque nobis voluptas
+                consequatur reiciendis, quis ex modi illo vel culpa.
               </p>
               <div class="card-footer">
                 <div class="card-profile">
-                  <img src="images/user-2.jpg" alt="Jessica Chen" />
+                  <img src="images/user-5.jpg" alt="David Park" />
                   <div class="card-profile-info">
-                    <span class="card-profile-name">Jessica Chen</span>
-                    <span class="card-profile-role">Developer</span>
+                    <span class="card-profile-name">David Park</span>
+                    <span class="card-profile-role">Motion Designer</span>
                   </div>
                 </div>
                 <a href="#" class="card-button">Read More</a>
@@ -146,6 +156,12 @@
             </div>
           </div>
         </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </body>
